@@ -3,3 +3,10 @@ ip link set eth0 up
 
 ip addr add 10.0.0.30/30 dev eth1
 ip link set eth1 up
+
+ip add add 10.0.1.25/29 dev eth2
+ip link set eth2 up
+
+ip add add 10.0.1.26/29 dev eth3
+ip link set eth3 up
+
