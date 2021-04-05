@@ -12,6 +12,5 @@ ip link set eth1 up
 ip addr add 10.0.1.1/29 eth2 
 ip link set eth0 up
 
-#server2
-ip addr add 10.0.1.2/29 eth3
-ip link set eth0 up
+/etc/init.d/frr start
+sysctl -w net.ipv4.fib_multipath_hash_policy=1

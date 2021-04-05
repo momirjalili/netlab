@@ -7,6 +7,5 @@ ip link set eth1 up
 ip add add 10.0.1.25/29 dev eth2
 ip link set eth2 up
 
-ip add add 10.0.1.26/29 dev eth3
-ip link set eth3 up
-
+/etc/init.d/frr start
+sysctl -w net.ipv4.fib_multipath_hash_policy=1
