@@ -9,7 +9,7 @@ ip link set eth1 up
 
 # connection to servers
 #server1
-ip addr add 10.0.1.1/29 eth2 
+ip addr add 10.0.1.1/29 dev eth2 
 ip link set eth0 up
 
 /etc/init.d/frr start
